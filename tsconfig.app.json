@@ -22,5 +22,5 @@
     "allowJs": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src", "*.d.ts", "types/**/*", "tests/button.test.tsx"]
+  "include": ["src", "*.d.ts", "types/**/*"]
 }

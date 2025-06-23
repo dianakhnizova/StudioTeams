@@ -5,6 +5,8 @@ import reactRefresh from 'eslint-plugin-react-refresh';
 import tseslint from 'typescript-eslint';
 import eslintPluginPrettier from 'eslint-plugin-prettier/recommended';
 import eslintPluginUnicorn from 'eslint-plugin-unicorn';
+import prettierPlugin from 'eslint-plugin-prettier';
+
 
 export default tseslint
   .config(
@@ -46,6 +48,8 @@ export default tseslint
       plugins: {
         'react-hooks': reactHooks,
         'react-refresh': reactRefresh,
+              prettier: prettierPlugin,
+
       },
       rules: {
         ...reactHooks.configs.recommended.rules,
@@ -83,6 +87,8 @@ export default tseslint
         'unicorn/no-negated-condition': 'off',
         'unicorn/no-lonely-if': 'off',
         'unicorn/no-array-reduce': 'off',
+              'prettier/prettier': 'error',
+
       },
     }
   )

@@ -3,7 +3,6 @@ export const App = () => {
   return (
     <div>
       <h1>HELLO WORLD</h1>
-      <h2>test husky</h2>
     </div>
   );
 };
