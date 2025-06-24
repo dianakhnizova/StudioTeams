@@ -1,5 +1,12 @@
+import { Wrapper } from '../../components/wrapper/wrapper';
 import { messages } from '../../sources/messages';
+import styles from './home-page.module.css';
 
 export const HomePage = () => {
-  return <div>{messages.titles.homePageTitle}</div>;
+  return (
+    <Wrapper>
+      {' '}
+      <div className={styles.container}>{messages.titles.homePageTitle}</div>
+    </Wrapper>
+  );
 };
