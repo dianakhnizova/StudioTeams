@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+:root {
+  --clr-disabled-100: #cacaca;
+  --clr-disabled-300: #a0a0a0;
+  --clr-disabled-600: #5f5f5f;
+  --clr-bg-1: #fff;
+  --clr-bg-2: #f6f5ff;
+  --clr-bg-3: #333;
+  --clr-line: #000;
+  --shadow-1: 0 10px 40px rgb(0 0 0 / 5%), 0 -10px 40px rgb(0 0 0 / 5%);
+  --shadow-2: 0px 5px 15.2px 0px #00000021;
+  --shadow-3: 0 12px 24px rgb(0 0 0 / 20%);
+}
+
+html,
+body {
+  background-color: var(--clr-bg-1);
+  min-height: 100vh;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.bodyBlock {
+  overflow: hidden;
+}
+
+@media (hover: hover) {
+  a {
+    cursor: pointer;
+  }
+}
