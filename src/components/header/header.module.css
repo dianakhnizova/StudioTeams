@@ -1,0 +1,8 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--clr-bg-3);
+  color: var(--clr-bg-1);
+  padding: 1rem;
+}
