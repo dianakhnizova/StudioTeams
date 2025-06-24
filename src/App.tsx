@@ -6,6 +6,7 @@ export const App = () => {
     <Layout>
       <h2>Основное содержимое</h2>
       <p>Этот блок занимает всю доступную высоту между header и footer.</p>
+      <div style={{ height: '200px' }}></div>
       <p>Контент будет прокручиваться под прилипшими элементами.</p>
       <div style={{ height: '2000px' }}></div>
     </Layout>
