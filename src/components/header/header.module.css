@@ -28,6 +28,7 @@
   gap: 0.5rem 1rem;
 }
 
+
 @media (width <= 500px) {
   .header {
     position: absolute;
