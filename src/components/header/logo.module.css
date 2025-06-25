@@ -1,0 +1,12 @@
+.logo {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #fff;
+}
+
+@media (width <= 500px) {
+  .logo {
+    cursor: pointer;
+  }
+}

@@ -1,26 +1,34 @@
+import { useState } from 'react';
+import { MOBILE_BREAKPOINT } from '@/constants';
+
 import styles from './header.module.css';
 import { Wrapper } from '@/components/wrapper/wrapper';
+import { Logo } from './logo';
+import { Menu } from './menu';
 
 export const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const isMobile = window.innerWidth <= MOBILE_BREAKPOINT;
+
+  const toggleMenu = () => {
+    if (isMobile) {
+      setIsMenuOpen(!isMenuOpen);
+    }
+  };
+
+  const closeMenu = () => {
+    if (isMobile) {
+      setIsMenuOpen(false);
+    }
+  };
+
   return (
-    <div>
-      <input type="checkbox" id="menu-toggle" className={styles.menuToggle} />
-
-      <header className={styles.header}>
-        <Wrapper>
-          <label htmlFor="menu-toggle" className={styles.menuLabel}>
-            <h2>ST</h2>
-          </label>
-
-          <ul className={styles.menu}>
-            <li>menu-1</li>
-            <li>menu-2</li>
-            <li>menu-3</li>
-            <li>menu-4</li>
-            <li>menu-5</li>
-          </ul>
-        </Wrapper>
-      </header>
-    </div>
+    <header className={`${styles.header} ${isMenuOpen ? styles.open : ''}`}>
+      <Wrapper>
+        <Logo toggleMenu={toggleMenu} />
+        <Menu isOpen={isMenuOpen} onItemClick={closeMenu} />
+      </Wrapper>
+    </header>
   );
 };

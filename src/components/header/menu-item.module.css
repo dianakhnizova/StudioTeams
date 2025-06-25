@@ -1,0 +1,8 @@
+.menuItem {
+  cursor: pointer;
+}
+
+.menuItem:hover {
+  color: #0f0;
+  transform: scale(1.1);
+}
