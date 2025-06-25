@@ -5,4 +5,49 @@
   background-color: var(--clr-bg-3);
   color: var(--clr-bg-1);
   padding: 1rem;
+  transition: 1s;
+}
+
+.header div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.menuToggle {
+  position: absolute;
+  opacity: 0;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  column-gap: 1rem;
+  row-gap: 0.5rem;
+}
+
+@media (max-width: 500px) {
+  .header{
+    width: fit-content;
+    border-radius: 25px;
+  }
+
+  .header div {
+    display: block;
+  }
+
+  .menuLabel {
+    cursor: pointer;
+  }
+  
+  .menu {
+    display: none;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  
+  .menuToggle:checked ~ .menu {
+    display: flex;
+  }
 }
