@@ -3,23 +3,24 @@ import { Wrapper } from '@/components/wrapper/wrapper';
 
 export const Header = () => {
   return (
-    <header className={styles.header}>
-      <Wrapper>
-        <label htmlFor="menu-toggle" className={styles.menuLabel}>
-          <h2>ST</h2>
-        </label>
+    <div>
+      <input type="checkbox" id="menu-toggle" className={styles.menuToggle} />
 
-        <input type="checkbox" id="menu-toggle" className={styles.menuToggle} />
+      <header className={styles.header}>
+        <Wrapper>
+          <label htmlFor="menu-toggle" className={styles.menuLabel}>
+            <h2>ST</h2>
+          </label>
 
-        <ul className={styles.menu}>
-          <li>menu-1</li>
-          <li>menu-2</li>
-          <li>menu-3</li>
-          <li>menu-4</li>
-          <li>menu-5</li>
-        </ul>
-
-      </Wrapper>
-    </header>
+          <ul className={styles.menu}>
+            <li>menu-1</li>
+            <li>menu-2</li>
+            <li>menu-3</li>
+            <li>menu-4</li>
+            <li>menu-5</li>
+          </ul>
+        </Wrapper>
+      </header>
+    </div>
   );
 };
