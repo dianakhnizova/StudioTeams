@@ -1,0 +1,10 @@
+.logo {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #fff;
+}
+
+.logoMobile {
+  cursor: pointer;
+}

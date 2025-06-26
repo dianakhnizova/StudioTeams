@@ -1,8 +1,24 @@
 .header {
+  display: flex;
+  align-items: center;
   position: sticky;
   top: 0;
   z-index: 100;
   background-color: var(--clr-bg-3);
   color: var(--clr-bg-1);
   padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+.header * {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.headerMobile {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
