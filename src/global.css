@@ -21,7 +21,6 @@ a:active {
 }
 
 :root {
-  --mobile-breakpoint: 500px;
   --clr-disabled-100: #cacaca;
   --clr-disabled-300: #a0a0a0;
   --clr-disabled-600: #5f5f5f;

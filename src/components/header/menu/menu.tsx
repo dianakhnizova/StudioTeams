@@ -1,16 +1,19 @@
 import styles from './menu.module.css';
-import { MenuItem } from './menu-item';
+import { MenuItem } from './menu-items/menu-item';
 
 type MenuProps = {
+  isMobile: boolean;
   isOpen: boolean;
   onItemClick: () => void;
 };
 
 const menuItems = ['menu-1', 'menu-2', 'menu-3', 'menu-4', 'menu-5'];
 
-export const Menu = ({ isOpen, onItemClick }: MenuProps) => {
+export const Menu = ({ isMobile, isOpen, onItemClick }: MenuProps) => {
   return (
-    <ul className={`${styles.menu} ${isOpen ? styles.open : ''}`}>
+    <ul
+      className={`${styles.menu} ${isMobile ? styles.menuMobile : ''} ${isMobile && isOpen ? styles.open : ''}`}
+    >
       {menuItems.map(item => (
         <MenuItem key={item} onClick={onItemClick}>
           {item}

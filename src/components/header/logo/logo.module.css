@@ -5,8 +5,6 @@
   color: #fff;
 }
 
-@media (width <= 500px) {
-  .logo {
-    cursor: pointer;
-  }
+.logoMobile {
+  cursor: pointer;
 }

@@ -1,15 +1,21 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useWindowSize } from 'react-use';
 import { MOBILE_BREAKPOINT } from '@/constants';
 
 import styles from './header.module.css';
 import { Wrapper } from '@/components/wrapper/wrapper';
-import { Logo } from './logo';
-import { Menu } from './menu';
+import { Logo } from './logo/logo';
+import { Menu } from './menu/menu';
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const isMobile = window.innerWidth <= MOBILE_BREAKPOINT;
+  const { width } = useWindowSize();
+  const isMobile = width <= MOBILE_BREAKPOINT;
+
+  useEffect(() => {
+    if (!isMobile) setIsMenuOpen(false);
+  }, [width]);
 
   const toggleMenu = () => {
     if (isMobile) {
@@ -24,10 +30,12 @@ export const Header = () => {
   };
 
   return (
-    <header className={`${styles.header} ${isMenuOpen ? styles.open : ''}`}>
+    <header
+      className={`${styles.header} ${isMobile ? styles.headerMobile : ''} ${isMenuOpen ? styles.open : ''}`}
+    >
       <Wrapper>
-        <Logo toggleMenu={toggleMenu} />
-        <Menu isOpen={isMenuOpen} onItemClick={closeMenu} />
+        <Logo isMobile={isMobile} toggleMenu={toggleMenu} />
+        <Menu isMobile={isMobile} isOpen={isMenuOpen} onItemClick={closeMenu} />
       </Wrapper>
     </header>
   );
