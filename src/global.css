@@ -21,6 +21,7 @@ a:active {
 }
 
 :root {
+  --clr-test: #0f0;
   --clr-disabled-100: #cacaca;
   --clr-disabled-300: #a0a0a0;
   --clr-disabled-600: #5f5f5f;

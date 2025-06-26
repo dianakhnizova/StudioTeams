@@ -20,3 +20,14 @@
 .menuMobile.open {
   display: flex;
 }
+
+.menuItem {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--clr-bg-1);
+}
+
+.menuItem:hover {
+  color: var(--clr-test);
+  transform: scale(1.1);
+}
