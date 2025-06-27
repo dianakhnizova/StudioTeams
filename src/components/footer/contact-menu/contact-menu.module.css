@@ -8,8 +8,8 @@
   display: none;
   flex-direction: column;
   position: absolute;
-  top: 100%;
-  left: 0;
+  bottom: 100%;
+  right: 0;
   width: max-content;
   background-color: var(--clr-bg-3);
   row-gap: 0.5rem;

@@ -18,7 +18,8 @@
   border-radius: 50%;
 }
 
-.footer .wrapper {
+.footer * {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
