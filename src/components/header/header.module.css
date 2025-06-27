@@ -10,7 +10,7 @@
   transition: all 0.3s ease;
 }
 
-.header * {
+.header .wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;

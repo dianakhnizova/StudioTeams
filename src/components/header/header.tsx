@@ -2,7 +2,7 @@ import { useMobileMenuToggle } from '@/utils/hooks/use-mobile-menu-toggle';
 
 import styles from './header.module.css';
 import { Wrapper } from '@/components/wrapper/wrapper';
-import { Logo } from './logo/logo';
+import { Logo } from '../logo/logo';
 import { NavMenu } from './nav-menu/nav-menu';
 
 export const Header = () => {
