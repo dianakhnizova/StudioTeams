@@ -12,7 +12,7 @@ export const Header = () => {
     <header
       className={`${styles.header} ${isMobile ? styles.headerMobile : ''} ${isMenuOpen ? styles.open : ''}`}
     >
-      <Wrapper>
+      <Wrapper className={styles.headerWrapper}>
         <Logo isMobile={isMobile} toggleMenu={toggleMenu} />
         <NavMenu
           isMobile={isMobile}
