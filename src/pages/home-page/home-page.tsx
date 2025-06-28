@@ -3,6 +3,9 @@ import { messages } from '@/sources/messages';
 import styles from './home-page.module.css';
 
 import { BlockSection } from './demo-block/block';
+import { MainTitle } from './components/main-title/main-title';
+import { Preview } from './components/preview/preview';
+import { Contacts } from './components/contacts/contacts';
 
 export const HomePage = () => {
   return (
@@ -14,6 +17,11 @@ export const HomePage = () => {
         <BlockSection />
         <BlockSection />
       </section>
+      <div className={styles.container}>
+        <MainTitle />
+        <Preview />
+        <Contacts />
+      </div>
     </Wrapper>
   );
 };
