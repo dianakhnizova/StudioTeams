@@ -1,0 +1,33 @@
+.menu {
+  display: flex;
+  list-style: none;
+  column-gap: 1rem;
+}
+
+.menuMobile {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  width: max-content;
+  background-color: var(--clr-bg-3);
+  row-gap: 0.5rem;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.menuMobile.open {
+  display: flex;
+}
+
+.menuItem {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--clr-bg-1);
+}
+
+.menuItem:hover {
+  color: var(--clr-test);
+  transform: scale(1.1);
+}
