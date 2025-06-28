@@ -20,7 +20,16 @@ a:active {
   outline: none;
 }
 
+@font-face {
+  font-family: 'Futura PT';
+  src: url('./assets/fonts/futura-pt/FuturaCyrillicLight.ttf')
+    format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 :root {
+  --ff-base: 'Futura PT', sans-serif;
   --clr-test: #0f0;
   --clr-disabled-100: #cacaca;
   --clr-disabled-300: #a0a0a0;
@@ -38,6 +47,8 @@ html,
 body {
   background-color: var(--clr-bg-1);
   min-height: 100vh;
+  font-family: var(--ff-base);
+  color: var(--clr-line);
 }
 
 .heading {
