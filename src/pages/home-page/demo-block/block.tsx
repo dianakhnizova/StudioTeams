@@ -2,9 +2,16 @@
 import styles from './block.module.css';
 
 import { useRef, useEffect, useState } from 'react';
+import type { FC, ReactNode } from 'react';
 import { useWindowScroll } from 'react-use';
+import classNames from 'classnames';
 
-export const BlockSection = () => {
+type Props = {
+  children: ReactNode;
+  className?: string;
+};
+
+export const BlockSection: FC<Props> = ({ children, className }) => {
   const { y: scrollY } = useWindowScroll();
   const sectionRef = useRef<HTMLElement>(null);
   const [angle, setAngle] = useState(0);
@@ -19,7 +26,7 @@ export const BlockSection = () => {
 
     const relativePosition = (elementCenterY - windowCenterY) / windowCenterY;
 
-    const maxAngle = 30;
+    const maxAngle = 10;
     const newAngle = relativePosition * maxAngle;
 
     setAngle(newAngle);
@@ -28,12 +35,12 @@ export const BlockSection = () => {
   return (
     <section
       ref={sectionRef}
-      className={styles.section}
+      className={classNames(styles.section, className)}
       style={{
-        transform: `perspective(500px) rotateX(${-angle / 4}deg) scale(${1 - Math.abs(angle) / 300})`,
+        transform: `perspective(500px) rotateX(${-angle / 2}deg) scale(${1 - Math.abs(angle) / 300})`,
       }}
     >
-      {/* style={{ transform: `scale(${1 - Math.abs(angle) / 300})`}}> */}
+      {children}
     </section>
   );
 };

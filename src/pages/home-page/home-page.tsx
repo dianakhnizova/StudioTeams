@@ -12,16 +12,19 @@ export const HomePage = () => {
     <Wrapper>
       <section className={styles.container}>
         {messages.titles.homePageTitle}
-        <BlockSection />
-        <BlockSection />
-        <BlockSection />
-        <BlockSection />
+        <BlockSection>
+          <MainTitle />
+        </BlockSection>
+
+        <BlockSection>
+          <Preview />
+        </BlockSection>
+
+        <BlockSection>
+          <Contacts />
+        </BlockSection>
       </section>
-      <div className={styles.container}>
-        <MainTitle />
-        <Preview />
-        <Contacts />
-      </div>
+      <div className={styles.container}></div>
     </Wrapper>
   );
 };
