@@ -1,3 +1,10 @@
+.container {
+  display: flex;
+  width: 50%;
+  background-color: var(--clr-bg-3);
+  padding: 20px;
+}
+
 .logo {
   background: none;
   border: none;
