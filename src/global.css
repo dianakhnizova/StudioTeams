@@ -30,6 +30,7 @@ a:active {
 
 :root {
   --ff-base: 'Futura PT', sans-serif;
+  --logo-size: 50px;
   --clr-test: #0f0;
   --clr-disabled-100: #cacaca;
   --clr-disabled-300: #a0a0a0;

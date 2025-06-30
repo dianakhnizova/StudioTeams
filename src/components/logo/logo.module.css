@@ -1,8 +1,11 @@
 .container {
   display: flex;
   width: 50%;
-  background-color: var(--clr-bg-3);
+  min-width: var(--logo-size);
+
+  /* background-color: var(--clr-bg-3); */
   padding: 20px;
+  justify-content: center;
 }
 
 .logo {
