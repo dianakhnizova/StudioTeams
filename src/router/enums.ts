@@ -1,4 +1,6 @@
 export enum PagePath {
   root = '/',
-  notFound = '/*',
+  notFoundPage = '/*',
+  aboutPage = '/about',
+  contactsPage = '/contacts',
 }

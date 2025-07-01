@@ -8,11 +8,11 @@ export const navMenuItemList: LinkItems[] = [
     label: messages.homeLinkTitle,
   },
   {
-    to: PagePath.root,
+    to: PagePath.aboutPage,
     label: messages.aboutLinkTitle,
   },
   {
-    to: PagePath.root,
+    to: PagePath.contactsPage,
     label: messages.contactLinkTitle,
   },
 ];

@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  width: 200px;
+}
+
+.link {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.link:hover {
+  transform: scale(1.07);
+}
+
+.image {
+  width: 70%;
+  max-height: 300px;
+  border-radius: 15px;
+}
+
+.name {
+  text-decoration: none;
+  color: var(--clr-line);
+  cursor: pointer;
+}
+
+@media (width <= 600px) {
+  .image {
+    width: 40%;
+    max-height: 200px;
+  }
+}
