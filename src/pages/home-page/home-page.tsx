@@ -6,6 +6,8 @@ import { BlockSection } from './demo-block/block';
 import { MainTitle } from './components/main-title/main-title';
 import { Preview } from './components/preview/preview';
 import { Contacts } from './components/contacts/contacts';
+import { RandomWorks } from '@/components/random-works/random-works';
+import { TechStack } from '../../components/tech-stack/tech-stack';
 
 export const HomePage = () => {
   return (
@@ -14,6 +16,14 @@ export const HomePage = () => {
         {messages.titles.homePageTitle}
         <BlockSection>
           <MainTitle />
+        </BlockSection>
+
+        <BlockSection>
+          <RandomWorks />
+        </BlockSection>
+
+        <BlockSection>
+          <TechStack />
         </BlockSection>
 
         <BlockSection>

@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 20px 80px;
+  gap: 20px;
+}
+
+.title {
+  font-size: 26px;
+  line-height: 42px;
+  text-align: center;
+}
+
+.stackContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.image {
+  width: 40px;
+  height: 40px;
+  border-radius: 15px;
+}
+
+@media (width <= 600px) {
+  .container {
+    padding: 80px;
+  }
+}

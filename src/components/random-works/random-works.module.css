@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  gap: 20px;
+  padding: 20px 0;
+  border: 1px solid var(--clr-bg-1);
+  border-radius: 15px;
+}
