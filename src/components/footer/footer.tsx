@@ -12,7 +12,7 @@ export const Footer = () => {
     <footer
       className={`${styles.footer} ${isMobile ? styles.footerMobile : ''} ${isMenuOpen ? styles.open : ''}`}
     >
-      <Wrapper>
+      <Wrapper className={styles.footerWrapper}>
         <ContactMenu
           isMobile={isMobile}
           isOpen={isMenuOpen}

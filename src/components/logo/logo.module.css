@@ -1,3 +1,13 @@
+.container {
+  display: flex;
+  width: 50%;
+  min-width: var(--logo-size);
+
+  /* background-color: var(--clr-bg-3); */
+  padding: 20px;
+  justify-content: center;
+}
+
 .logo {
   background: none;
   border: none;

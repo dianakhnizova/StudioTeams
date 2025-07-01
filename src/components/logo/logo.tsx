@@ -6,11 +6,13 @@ type LogoProps = {
 };
 
 export const Logo = ({ isMobile, toggleMenu }: LogoProps) => (
-  <button
-    className={`${styles.logo} ${isMobile ? styles.logoMobile : ''}`}
-    onClick={toggleMenu}
-    aria-label="Toggle menu"
-  >
-    <span>ST</span>
-  </button>
+  <div className={styles.container}>
+    <button
+      className={`${styles.logo} ${isMobile ? styles.logoMobile : ''}`}
+      onClick={toggleMenu}
+      aria-label="Toggle menu"
+    >
+      <span>ST</span>
+    </button>
+  </div>
 );

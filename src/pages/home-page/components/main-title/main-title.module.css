@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 20px;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  padding: 30px 45px 0 40px;
+  gap: 16px;
+}
+
+.titleProf {
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 139%;
+  letter-spacing: 7%;
+  text-align: justify;
+}
+
+.titleName {
+  font-size: 60px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  text-transform: uppercase;
+}
+
+.titleDescription {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 139%;
+  letter-spacing: 3%;
+  text-align: justify;
+}
+
+.image {
+  width: 50%;
+}
