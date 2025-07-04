@@ -44,6 +44,10 @@ a:active {
   --shadow-3: 0 12px 24px rgb(0 0 0 / 20%);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   background-color: var(--clr-bg-1);
