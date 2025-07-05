@@ -12,7 +12,7 @@ import { TechStack } from '../../components/tech-stack/tech-stack';
 export const HomePage = () => {
   return (
     <Wrapper>
-      <section className={styles.container}>
+      <section className={`${styles.container} ${styles.background}`}>
         {messages.titles.homePageTitle}
         <BlockSection>
           <MainTitle />

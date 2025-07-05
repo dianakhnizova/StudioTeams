@@ -9,14 +9,11 @@ type LogoProps = {
 };
 
 export const Logo = ({ isMobile, toggleMenu, className }: LogoProps) => (
-  <div className={`${styles.container} ${className || ''}`}>
-    <button
-      className={`${styles.logo} ${isMobile ? styles.logoMobile : ''}`}
-      onClick={toggleMenu && toggleMenu}
-      aria-label="Toggle menu"
-    >
-      {/* <span>ST</span> */}
-      <img src={SnakeLogo} alt="Logo StudioTeams" />
-    </button>
+  <div
+    className={`${className || ''} ${styles.logo} ${isMobile ? styles.logoMobile : ''}`}
+    onClick={toggleMenu && toggleMenu}
+    aria-label="Toggle menu"
+  >
+    <img src={SnakeLogo} alt="Logo StudioTeams" />
   </div>
 );

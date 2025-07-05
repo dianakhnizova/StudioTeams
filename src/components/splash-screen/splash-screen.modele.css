@@ -14,17 +14,25 @@
 }
 
 .logo img {
-  height: 500px;
-  width: 500px;
+  width: 100dvw;
+  height: 100dvh;
+  object-fit: contain;
   border-radius: unset;
-  animation: zoom 1.5s;
+  animation: zoom 1.5s forwards;
 }
 
 @keyframes zoom {
-  from {
+  0% {
+    opacity: 0;
     transform: scale(0.1);
   }
-  to {
+
+  50% {
+    opacity: 1;
     transform: scale(1);
+  }
+
+  100% {
+    opacity: 0.05;
   }
 }

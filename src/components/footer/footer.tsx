@@ -19,7 +19,12 @@ export const Footer = () => {
           onItemClick={closeMenu}
         />
 
-        <Logo isMobile={isMobile} toggleMenu={toggleMenu} />
+        <div
+          className={styles.logoContainer}
+          style={isMobile ? { justifyContent: 'end' } : {}}
+        >
+          <Logo isMobile={isMobile} toggleMenu={toggleMenu} />
+        </div>
       </Wrapper>
     </footer>
   );

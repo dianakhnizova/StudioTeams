@@ -13,7 +13,13 @@ export const Header = () => {
       className={`${styles.header} ${isMobile ? styles.headerMobile : ''} ${isMenuOpen ? styles.open : ''}`}
     >
       <Wrapper className={styles.headerWrapper}>
-        <Logo isMobile={isMobile} toggleMenu={toggleMenu} />
+        <div
+          className={styles.logoContainer}
+          style={isMobile ? { justifyContent: 'start' } : {}}
+        >
+          <Logo isMobile={isMobile} toggleMenu={toggleMenu} />
+        </div>
+
         <NavMenu
           isMobile={isMobile}
           isOpen={isMenuOpen}
