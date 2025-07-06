@@ -1,13 +1,13 @@
 import { Wrapper } from '@/components/wrapper/wrapper';
 import { messages } from '@/sources/messages';
 import styles from './home-page.module.css';
-
 import { BlockSection } from './demo-block/block';
 import { MainTitle } from './components/main-title/main-title';
 import { Preview } from './components/preview/preview';
 import { Contacts } from './components/contacts/contacts';
 import { RandomWorks } from '@/components/random-works/random-works';
 import { TechStack } from '../../components/tech-stack/tech-stack';
+import { ContactMeForm } from '@/components/contact-me-form/contact-me-form';
 
 export const HomePage = () => {
   return (
@@ -16,6 +16,10 @@ export const HomePage = () => {
         {messages.titles.homePageTitle}
         <BlockSection>
           <MainTitle />
+        </BlockSection>
+
+        <BlockSection>
+          <ContactMeForm />
         </BlockSection>
 
         <BlockSection>
