@@ -7,14 +7,21 @@
   z-index: 100;
   background-color: var(--clr-bg-3);
   color: var(--clr-bg-1);
-  padding: 1rem;
+
+  /* padding: 1rem; */
   transition: all 0.3s ease;
 }
 
+.logoContainer {
+  display: flex;
+  width: 50%;
+  min-width: var(--logo-size);
+  justify-content: center;
+  align-items: center;
+}
+
 .footerMobile {
-  width: var(--logo-size);
-  height: var(--logo-size);
-  border-radius: 50%;
+  background-color: transparent;
 }
 
 .footerWrapper {
@@ -25,5 +32,9 @@
 }
 
 .footerMobile .footerWrapper {
-  justify-content: center;
+  justify-content: end;
+}
+
+.footerLogoMobile {
+  justify-content: end;
 }

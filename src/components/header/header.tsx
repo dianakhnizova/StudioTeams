@@ -4,6 +4,7 @@ import styles from './header.module.css';
 import { Wrapper } from '@/components/wrapper/wrapper';
 import { Logo } from '@/components/logo/logo';
 import { NavMenu } from './nav-menu/nav-menu';
+import classNames from 'classnames';
 
 export const Header = () => {
   const { isMenuOpen, isMobile, toggleMenu, closeMenu } = useMobileMenuToggle();
@@ -13,7 +14,16 @@ export const Header = () => {
       className={`${styles.header} ${isMobile ? styles.headerMobile : ''} ${isMenuOpen ? styles.open : ''}`}
     >
       <Wrapper className={styles.headerWrapper}>
-        <Logo isMobile={isMobile} toggleMenu={toggleMenu} />
+        <div
+          className={classNames(
+            styles.logoContainer,
+            isMobile && styles.headerLogoMobile
+          )}
+          // style={isMobile ? { justifyContent: 'start' } : {}}
+        >
+          <Logo isMobile={isMobile} toggleMenu={toggleMenu} />
+        </div>
+
         <NavMenu
           isMobile={isMobile}
           isOpen={isMenuOpen}
