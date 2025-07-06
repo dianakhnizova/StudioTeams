@@ -27,13 +27,10 @@
 .menuItem {
   cursor: pointer;
   text-decoration: none;
-
-  /* color: var(--clr-bg-1); */
   color: var(--clr-line);
 }
 
 .menuItem:hover {
-  /* color: var(--clr-test); */
   color: var(--clr-hover-1);
   transform: scale(1.1);
 }

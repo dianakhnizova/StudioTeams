@@ -4,6 +4,7 @@ import { useMobileMenuToggle } from '@/utils/hooks/use-mobile-menu-toggle';
 import { Wrapper } from '@/components/wrapper/wrapper';
 import { Logo } from '@/components/logo/logo';
 import { ContactMenu } from '@/components/footer/contact-menu/contact-menu';
+import classNames from 'classnames';
 
 export const Footer = () => {
   const { isMenuOpen, isMobile, toggleMenu, closeMenu } = useMobileMenuToggle();
@@ -20,8 +21,10 @@ export const Footer = () => {
         />
 
         <div
-          className={styles.logoContainer}
-          style={isMobile ? { justifyContent: 'end' } : {}}
+          className={classNames(
+            styles.logoContainer,
+            isMobile && styles.footerLogoMobile
+          )}
         >
           <Logo isMobile={isMobile} toggleMenu={toggleMenu} />
         </div>

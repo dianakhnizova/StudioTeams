@@ -27,3 +27,7 @@
 .headerMobile {
   background-color: transparent;
 }
+
+.headerLogoMobile {
+  justify-content: start;
+}
